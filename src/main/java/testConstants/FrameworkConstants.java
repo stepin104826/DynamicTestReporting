@@ -6,6 +6,7 @@ public class FrameworkConstants {
 	private static final String FIREFOXDRIVERPATH =  "C:\\WebDrivers\\geckodriver\\geckodriver.exe";
 	private static final String EDGEDRIVERPATH = "C:\\WebDrivers\\edgedriver\\msedgedriver.exe";
 	private static final String CONFIGFILEPATH = System.getProperty("user.dir") + "/src/test/resources/Configuration/config.properties";
+	private static final String REPORTSFOLDERPATH = System.getProperty("user.dir") + "/ExtentReports";
 		
 	
 	public static String getChromeDriverPath() {
@@ -25,6 +26,10 @@ public class FrameworkConstants {
 
 	public static String getConfigfilepath() {
 		return CONFIGFILEPATH;
+	}
+	
+	public static String getReportsfolderpath() {
+		return REPORTSFOLDERPATH;
 	}
 
 }
